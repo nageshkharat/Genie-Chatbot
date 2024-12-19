@@ -1,0 +1,26 @@
+.container{
+    padding: 10px;
+    cursor: pointer;
+    /* background-color: #982cf6; */
+    background: linear-gradient(to right, #2e0f52,  #631ea8,  #8051c1,#9a7ebd);
+    border: none;
+    border-radius: 50px;
+    width: max-content;
+    color: white;
+    font-size: 15px;
+}
+.container:hover{
+    background: linear-gradient(to right, #9a7ebd, #8051c1, #631ea8, #2e0f52);
+}
+
+@media (max-width:1070px){
+    .container{
+        font-size: 14px;
+    }
+  }
+
+  @media (max-width:850px){
+    .container{
+        font-size: 13px;
+    }
+  }

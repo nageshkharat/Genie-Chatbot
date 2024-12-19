@@ -1,0 +1,27 @@
+.container{
+  width: 42px;
+  height: 24px;
+  border: 1.5px solid #a422cc70;
+  border-radius: 30px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 2px;
+  position: relative;
+  cursor: pointer;
+}
+.container:hover{
+  border: 1.5px solid rgb(57, 130, 143);
+}
+.icon{
+  font-size: 12px;
+}
+
+.ball{
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(to right, #2e0f52,  #631ea8,  #8051c1,#9a7ebd);
+  border-radius: 50%;
+  top: 3px;
+  position: absolute;
+}
