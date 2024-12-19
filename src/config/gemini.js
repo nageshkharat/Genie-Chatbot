@@ -4,9 +4,7 @@ import {
   HarmBlockThreshold,
 } from "@google/generative-ai"
 
-//   const apiKey = process.env.GEMINI_API_KEY;
-// const API_KEY = "AIzaSyCzNoDUamz5u9kbR69g7y8wmEgZfEwGb24"
-const API_KEY = "AIzaSyBqRxO0l_0iygesDG-Dkkr0poAFkmN74qo"
+const apiKey = process.env.GOOGLE_API_KEY;
 
 async function run(prompt) {
   const genAI = new GoogleGenerativeAI(API_KEY);
