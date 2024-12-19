@@ -19,26 +19,5 @@ Genie is a chatbot application developed using the Next.JS, Tailwind CSS and Goo
       <li>NextJS</li>
       <li>Tailwind CSS</li>
       <li>React Router</li>
+      <li>Gemini API</li>
   </ul>
-
-
-## 🌜 Installation
-
-1. Clone this repository :
-
-```bash
-git clone https://github.com/SupakunZ/Gunglz_Chatbot.git
-```
-
-2. Navigate to the project folder and install dependencies :
-
-```
-cd Gunglz_Chatbot
-npm install
-```
-
-3. Launch the application in development mode :
-
-```
-npm run dev
-```
