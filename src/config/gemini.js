@@ -1,15 +1,13 @@
-import {
-  GoogleGenerativeAI,
-  HarmCategory,
-  HarmBlockThreshold,
-} from "@google/generative-ai"
+import { config } from "dotenv";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
-  const apiKey = process.env.GEMINI_API_KEY;
-// const API_KEY = ""
+config(); // Load .env variables
+
+const API_KEY = process.env.GOOGLE_GENERATIVE_AI_KEY;
 
 async function run(prompt) {
   const genAI = new GoogleGenerativeAI(API_KEY);
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash", });
+  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
   const generationConfig = {
     temperature: 1,
@@ -21,12 +19,10 @@ async function run(prompt) {
 
   const chatSession = model.startChat({
     generationConfig,
-    history: [
-    ],
+    history: [],
   });
 
   const result = await chatSession.sendMessage(prompt);
-  // console.log(result.response.text());
   return result.response.text();
 }
 
